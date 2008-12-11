@@ -13,7 +13,7 @@ module Brightbox
         msgs = []
         flash.each do |key, message|
           msgs << "\t" + content_tag("li", message, :class => key)
-        end
+        end.unshift("") << "" # Force a newline before/after items
         content_tag("ul", msgs.join("\n"), :id => css_id)
       end
             
