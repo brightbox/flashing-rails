@@ -6,7 +6,7 @@ Adds a method to your views to output all flash messages.
 
 ## Install
 
-	ruby script/plugin install git://github.com/caius/flashing-rails.git
+	ruby script/plugin install git://github.com/brightbox/flashing-rails.git
 
 ## Usage
 
