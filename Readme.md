@@ -14,13 +14,15 @@ Add `flash_messages` where you want the list to appear. It outputs an unordered 
 
 Optionally add `:id => "foo"` or `:class => "bar"` to set the id/class of the list in HTML. Default is an id of "Flash" with no class.
 
+Flashing Rails also handles `flash[:foo]` being an array of messages to output. In this case it will output them all as individual flash messages, with the same HTML class.
+
 ### Example
 
 #### Controller
 	
-	flash[:notice] = "Hi people."
-	flash[:warning] = "I am warning you of impending doom."
-	flash[:error] = "You forgot to blink whilst reading this."
+	flash[:notice] = ["Hi people", "Wotcha"]
+	flash[:warning] = "I am warning you of impending doom"
+	flash[:error] = "You forgot to blink whilst reading this"
 
 #### Layout
 
@@ -29,9 +31,10 @@ Optionally add `:id => "foo"` or `:class => "bar"` to set the id/class of the li
 #### Output
 	
 	<ul id="flash">
-		<li class="notice">Hi people.</li>
-		<li class="warning">I am warning you of impending doom.</li>
-		<li class="error">You forgot to blink whilst reading this.</li>
+		<li class="notice">Hi people</li>
+		<li class="notice">Wotcha</li>
+		<li class="warning">I am warning you of impending doom</li>
+		<li class="error">You forgot to blink whilst reading this</li>
 	</ul>
 
 ## Released under the MIT Licence
