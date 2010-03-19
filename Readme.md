@@ -37,6 +37,14 @@ Flashing Rails also handles `flash[:foo]` being an array of messages to output. 
 		<li class="error">You forgot to blink whilst reading this</li>
 	</ul>
 
+## Changelog
+
+* v1.0 - 2008-12-11  
+	Initial Release
+
+* v1.1 - 2010-03-19  
+	Added array handling to output generating
+
 ## Released under the MIT Licence
 
 Copyright (c) 2008 Brightbox Systems Ltd 
