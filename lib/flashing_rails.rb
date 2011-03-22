@@ -22,7 +22,7 @@ module Brightbox
           generate_flash_list[key, message]
         end.unshift("") << "" # Force a newline before/after items
 
-        content_tag("ul", msgs.join("\n"), :id => css_id)
+        content_tag("ul", msgs.join("\n").html_safe, :id => css_id).to_s.html_safe
       end
 
     end
