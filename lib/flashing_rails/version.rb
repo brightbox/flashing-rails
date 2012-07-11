@@ -1,5 +1,3 @@
-module Flashing
-  module Rails
-    VERSION = "1.2"
-  end
+module FlashingRails
+  VERSION = "1.2.1"
 end

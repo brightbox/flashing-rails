@@ -12,5 +12,5 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.name          = "flashing_rails"
   gem.require_paths = ["lib"]
-  gem.version       = Flashing::Rails::VERSION
+  gem.version       = FlashingRails::VERSION
 end
